@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+  head
+    title @Home Computers - Seattle, WA
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(http-equiv='Content-Style-Type', content='text/css')
+    meta(name='copyright', content='© Eric Storch')
+    meta(name='author', lang='en', content='Eric Storch')
+    meta(name='robots', content='Index,Follow')
+    meta(name='description', content='Mobile Computer Repairs, Computer Use and Programming Tutoring, Website Design')
+    meta(name='keyword', content='Eric Storch, Software Developer, Programmer, Computer Repair, Tutoring, Seattle, Bellevue, Issaquah, Redmond, Samammish')
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="/favicon.ico", type="image/x-icon")
+    link(href='http://fonts.googleapis.com/css?family=Raleway:400,600,800', rel='stylesheet', type='text/css')
+
+  body(ng-app="app", ng-controller="appController")
+    div.container
+      div.navbar
+        div.navbar-title.pull-left
+          span.bold-title Home
+          span.normal-title Computers
+        div.navbar-item.pull-right
+          p
+           a(href="#section-one") Repairs
+        div.navbar-item.pull-right
+          p
+            a(href="#website-design") Website Design
+        div.navbar-item.pull-right
+          p
+            a(href="#tutoring") Tutoring
+        div.navbar-item.pull-right
+          p
+            a(href="#credentials") Credentials
+        div.navbar-item.pull-right
+          p
+            a(href="#testemonials") Testemonial
+        div.navbar-item.pull-right
+          p
+            a(href="#contact") Contact
+      div.section#bg-video
+        video.bg-video(autoplay loop id="bgvid")
+          source(src="../assets/videos/vid.webm" type="video/webm")
+      div.section#welcome
+        div.grand-title-wrapper.left
+          p.grand-title Local Computer Services
+          p.grand-subtitle along with helpful advice
+        div.grand-content
+          p.section-description @HomeComputers is a locally owned and operated computer repair / website design service stationed in the greater Seattle area. With a staff backed by college degrees and decades of experience, we take pride in making your technology-oriented life easy and understandable.
+      div.section#services
+        p.section-header Our Services
+        p.section-subheader Versitle &#8226; Experienced &#8226; Local
+        img.divider(src="../assets/images/divider.jpg")
+        p.section-description We are a multi-talented group. Click below for information about specifics.
+        div.subsection
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/computer.jpg")
+            p.selection-title Computer Diagnostics & Repair
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/wifi.jpg")
+            p.selection-title Wireless Network Setup & Security
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/web.jpg")
+            p.selection-title Advanced Website Design
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/teaching.jpg")
+            p.selection-title Teaching & Tutoring
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/tutoring.jpg")
+            p.selection-title Consulting
+            button(type="button" class="btn btn-danger")
+              | More
+
+      div.section#repairs
+        div.grand-title-wrapper.right
+          p.grand-title.shadow.right Computer Problems? We Come To You
+          p.grand-subtitle.outline.right on-site repairs and consultation
+      div.section#about
+        p.section-header About Me
+        p.section-subheader Eric Storch
+        p.section-subheader Bachelor's Degree - Computer Science
+        img.divider(src="../assets/images/divider-black.jpg")
+      div.section#testemonials
+        p Testemonials
+      div.section#contact
+        p Contact
+      div.section#footer
+        p Footer
+
+
+
+link(rel="stylesheet", href="css/bootstrap.css")
+link(rel="stylesheet", href="css/custom.css")
+script(src="js/angular.js")
+script(src="js/angular-route.js")
+script(src="js/angular-resource.js")
+script(src="js/ui-bootstrap-tpls.js")
+script(src="js/jquery.js")
+script(src="js/app.js")
+script(src="js/templates.js")
+script(src="js/services.js")
+script(src="js/custom.js")
